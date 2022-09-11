@@ -12,6 +12,7 @@ message_list = [
     "诚信交友，诚信交友，诚信交友，诚信交友，诚信交友，诚信交友，诚信交友，我是夏力维。",
     "诚信交友，遭遇裁员，只能自己出来干，已三十岁，人生期待新征程。",
     "诚信交友，一起涨粉，我会持续关注大家，不太会用手机小屏幕，速度偏慢望谅解！",
+    "诚信交友，互关互关，相互扶持，777777777777",
 ]
 
 def adb_tap(x,y,sleep=0):
@@ -30,10 +31,10 @@ def adb_send_message(message,sleep=0):
     os.system(cmd_str)
     time.sleep(sleep)
 
-send_times = 100
+send_times = 1000
 for i in range(0,send_times):
     print("第%s次发送"%i)
     adb_tap(317,2270,1)
-    current_message = int(random.random()*10%4)
+    current_message = int(random.random()*10%len(message_list))
     adb_send_message(message_list[current_message],1)
-    adb_tap(1005,2238,1)
+    adb_tap(1005,2238,0)
