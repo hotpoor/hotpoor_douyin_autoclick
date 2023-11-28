@@ -8,13 +8,10 @@ import random
 # 开始跑同样的话术
 
 device_id = "abc08d7d"
-
 comment_x = 82
 comment_y = 2273
-
 send_x = 977
 send_y = 2097
-
 
 message_list = [
     "诚信交友，大家好，我十年Python工程师，现在自己重新起步，期待和大家共勉！",
